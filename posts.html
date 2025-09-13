@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@myd@irees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #fafafa;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .posts-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            /* allows wrapping on smaller screens */
+            gap: 20px;
+            /* space between items */
+            justify-content: space-between;
+            /* centers everything */
+        }
+
+        .posts-gallery a {
+            text-decoration: none;
+        }
+
+        .posts-gallery img {
+            width: 400px;
+            /* all images same size */
+            height: 400px;
+            /* keeps them neat */
+            object-fit: cover;
+            /* crops nicely without distortion */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .posts-gallery img:hover {
+            transform: scale(1.05);
+            /* zoom effect on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .posts-gallery img {
+                width: 100%;
+                /* take full width on mobile */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>HERE ARE MORE POSTS FROM OUR WEBSITE @myd@irees</h2>
+    <p>Click on the image you want to see ..</p>
+
+    <div class="posts-gallery">
+        <a href="./4THIMAGE.html"><img src="./images/4th image.jpeg" alt="Post 4"></a>
+        <a href="./5THIMAGE.html"><img src="./images/5th image.jpeg" alt="Post 5"></a>
+        <a href="./6THIMAGE.html"><img src="./images/6th image.jpeg" alt="Post 6"></a>
+        <a href="./7THIMAGE.html"><img src="./images/7th image.jpeg" alt="Post 7"></a>
+        <a href="./8THIMAGE.html"><img src="./images/8th image.jpeg" alt="Post 8"></a>
+        <a href="./9THIMAGE.html"><img src="./images/9th image.jpeg" alt="Post 9"></a>
+        <a href="./10THIMAGE.html"><img src="./images/10th image.jpeg" alt="Post 10"></a>
+        <a href="./11THimage .html"><img src="./images/11th image.jpeg" alt="Post 11"></a>
+        <a href="./12thimage.html"><img src="./images/12th image.jpeg " alt="Post 11"></a>
+        <a href="./13image.html"><img src="./images/13th image.jpeg " alt="Post 11"></a>
+    </div>
+
+</body>
+
+</html>

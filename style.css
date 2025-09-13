@@ -1,0 +1,177 @@
+/* ---------- Base Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Times, serif;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.hero-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-title h1 {
+    font-size: 2.5em;
+    /* big but responsive */
+    font-weight: bold;
+}
+
+/* ---------- Header ---------- */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ---------- Motivation Row ---------- */
+.motivation-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.motivation-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.motivation-item img {
+    width: 100%;
+    height: 300px;
+    /* 👈 fixed equal height for all */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ---------- Insights Section ---------- */
+.recent-image-row
+ {
+     display: flex;
+    flex-wrap: wrap;
+    /* allows wrapping to next row */
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.recent-image-row>div 
+{
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 items per row */
+    text-align: center;
+}
+
+.recent-image-row img {
+        width: 100%;
+        height: 600px;
+        /* not too long, not too short */
+        object-fit: cover;
+        /* keeps good proportions */
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 10px;
+}
+
+.post-title {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 14px;
+    color: gray;
+}
+/* ---------- Footer ---------- */
+.footer-links {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .motivation-item {
+        max-width: 45%;
+    }
+
+    .recent-image-row>div {
+        max-width: 45%;
+    }
+}
+
+/* Phones (≤768px) */
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 1em;
+    }
+
+    .motivation-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motivation-item {
+        max-width: 100%;
+    }
+
+    .recent-image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recent-image-row>div {
+        max-width: 100%;
+    }
+
+    .insights-title,
+    .insights-subtitle,
+    .footer-title,
+    .footer-desc {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
